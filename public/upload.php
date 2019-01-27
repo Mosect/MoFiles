@@ -48,7 +48,7 @@ if (count($_FILES) > 0) {
         if ($error > 0) {
             $data = [
                 'error' => $code,
-                'result' => null
+                'files' => null
             ];
             echo json_encode($data);
             return;
